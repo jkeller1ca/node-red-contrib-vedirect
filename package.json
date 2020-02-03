@@ -1,0 +1,38 @@
+{
+  "name": "node-red-contrib-vedirect",
+  "version": "1.0.0",
+  "description": "Node-Red node that reads data from Victron Energy devices.",
+  "main": "node",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkeller1ca/node-red-contrib-vedirect.git"
+  },
+  "keywords": [
+    "node-red",
+    "nodes",
+    "victron",
+    "serial",
+    "energy"
+  ],
+  "author": "Jesse Keller <jkeller1ca@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkeller1ca/node-red-contrib-vedirect/issues"
+  },
+  "homepage": "https://github.com/jkeller1ca/node-red-contrib-vedirect#readme",
+  "node-red" : {
+        "nodes": {
+            "VE.Direct": "vedirect.js"
+        }
+  },
+  "scripts": {
+    "test": "mocha \"test/*_spec.js\""
+  }
+}
+
