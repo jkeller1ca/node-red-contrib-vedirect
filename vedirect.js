@@ -243,7 +243,10 @@ const translations = {
         frame["day_number"] = parseInt(val);
     },
     "I": function(frame, val) {
-        frame["current"] = Number(val);
+        frame["current"] = Number(val) / 1000.0;
+    },
+    "IL": function(frame, val) {
+        frame["load_current"] = Number(val) / 1000.0;
     },
     "LOAD": function(frame, val) {
         frame["load"] = (val == "ON" ? 1 : 0);
